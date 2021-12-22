@@ -23,10 +23,13 @@ export default function Carrousel() {
                  align="center"
                  justify="center"
                  direction="column"
+                 bgSize="cover"
+                 bgRepeat="no-repeat"
+                 bgPosition="center"
                  bgImage="url(/images/europe.png)"
                 >
-                  <Heading fontSize="4rem" color="light.headingsAndText" fontWeight="700" mb="1rem">Europa</Heading>
-                  <Text color="light.info" fontWeight="700">O continente mais antigo do mundo.</Text>
+                  <Heading fontSize={["24px","48px"]} lineHeight={["36px","72px"]} color="light.headingsAndText" fontWeight="700" mb="1rem">Europa</Heading>
+                  <Text color="light.info" fontWeight="700">O continente mais antigo.</Text>
                 </Flex>
               </SwiperSlide>
 
