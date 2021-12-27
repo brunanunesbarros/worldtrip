@@ -5,7 +5,6 @@ import {
     GridItem,
     useBreakpointValue,
     Box,
-    Center,
     Icon,
     Flex,
 } from "@chakra-ui/react";

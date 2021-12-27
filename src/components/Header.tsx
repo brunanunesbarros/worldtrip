@@ -21,7 +21,7 @@ export function Header() {
                 
             ) : (
                 <Center alignSelf="center" h={["70px", "100px"]}>
-                    <Img w={["50px", "200px"]} src="/images/Logo.png" alt="logo" />
+                    <Img w={["100px", "200px"]} src="/images/Logo.png" alt="logo" />
                 </Center>
             )}
         </Container>
