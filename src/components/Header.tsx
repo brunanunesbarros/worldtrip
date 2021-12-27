@@ -1,6 +1,7 @@
-import { Flex, Center, Img, Link, Icon, Container } from "@chakra-ui/react";
+import { Flex, Center, Img, Icon, Container } from "@chakra-ui/react";
 import { IoIosArrowBack } from "react-icons/io";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 export function Header() {
     const router = useRouter();
@@ -9,8 +10,10 @@ export function Header() {
             {router.query.slug ? (
                 <Center h={["50px","100px"]} w={["100%"]}>
                     <Flex w="100%">
-                        <Link href="/" align="left">
-                            <Icon as={IoIosArrowBack} />
+                        <Link href="/" passHref>
+                            <a>
+                                <Icon as={IoIosArrowBack} />
+                            </a>
                         </Link>
                     </Flex>
 
